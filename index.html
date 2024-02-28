@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea una pagina di registrazione per un app di music streaming!</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>OKRIM MUSIC STREAMING</h1>
+    </header>
+    <section class="form_section">
+        <h2 class="form_title">REGISTRATI</h2>
+        <form onsubmit="alert('Registrazione inviata!')">
+            <fieldset>
+                <legend>Anagrafica</legend>
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="campo obbligatorio" required>
+                <label for="cognome">Cognome</label>
+                <input type="text" placeholder="campo obbligatorio" required>
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="campo obbligatorio" required>
+                <label for="data_nascita">Data di nascita</label>
+                <input type="date" placeholder="campo obbligatorio" required>
+                <label for="telefono">Numero di telefono</label>
+                <input type="number" placeholder="campo obbligatorio" required>
+            </fieldset>
+            <fieldset>
+                <legend>Dati d'accesso</legend>
+                <label for="username">Nome utente</label>
+                <input type="text" placeholder="campo obbligatorio" required>
+                <label for="password">Password</label>
+                <input type="password" placeholder="campo obbligatorio" required>
+                <label for="conferma_password">Conferma password</label>
+                <input type="password" placeholder="campo obbligatorio" required>
+            </fieldset>
+            <fieldset id="checkbox_container">
+                <legend>Gusti musicali</legend>
+                <div>
+                    <input type="checkbox" id="pop">
+                    <label for="pop">Pop</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="rap">
+                    <label for="rap">Rap</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="rock">
+                    <label for="rock">Rock</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="classica">
+                    <label for="classica">Classica</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="jazz">
+                    <label for="jazz">Jazz</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="blues">
+                    <label for="blues">Blues</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Termini e Condizioni</legend>
+                <div id="radio_container">
+                    <div>
+                        <input type="radio" name="termini_condizioni" placeholder="campo obbligatorio" required>
+                        <label for="termini_condizioni">Accetto</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="termini_condizioni" id="non_accetto">
+                        <label for="termini_condizioni">Non accetto</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="button_container">
+                <button type="submit">Invia Registrazione</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <a
+            href="https://it.freepik.com/vettori-gratuito/note-musicali-arcobaleno-colorato-con-disco-in-vinile-su-sfondo-bianco_26161998.htm">Immagine
+            di brgfx su Freepik</a>
+    </footer>
+</body>
+
+</html>
